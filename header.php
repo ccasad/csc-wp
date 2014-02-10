@@ -58,7 +58,7 @@ $props = $GLOBALS['page_properties'];
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['educators']; ?>" href="<?php print $base_path; ?>educators"></a> 
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['exhibits']; ?>" href="<?php print $base_path; ?>exhibits"></a> 
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['about']; ?>" href="<?php print $base_path; ?>our-vision"></a> 
-								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['memberships']; ?>" href="<?php print $base_path; ?>memberships"></a> 
+								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['volunteer']; ?>" href="<?php print $base_path; ?>volunteer-how-to"></a> 
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['news']; ?>" href="<?php print $base_path; ?>current-news"></a> 
 							</div>
 						</div>

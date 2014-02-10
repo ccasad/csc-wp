@@ -33,7 +33,7 @@ $props = new PageProperties();
 $GLOBALS['page_properties'] = $props;
 
 class PageProperties {
-	public $iconsActiveArr = array('kids'=>'ko','visitors'=>'vs','educators'=>'ed','exhibits'=>'ex','about'=>'au','news'=>'cn','supporters'=>'su','memberships'=>'ms','donate'=>'hd');
+	public $iconsActiveArr = array('kids'=>'ko','visitors'=>'vs','educators'=>'ed','exhibits'=>'ex','about'=>'au','news'=>'cn','supporters'=>'su','volunteer'=>'ms','donate'=>'hd');
 	public $headerCssClass = 'csc-index';
 	public $leftMenuId = '';
 	public $displaySecondaryMenu = true;
@@ -118,17 +118,17 @@ function get_page_properties() {
 		$props->headerCssClass = 'csc-supporters';
 		$props->leftMenuId = 'Supporters';
 		$props->rightSidebarId = 'supporters';
-		$props->rightSidebarText = '<strong class="bgreen">Get The Word Out</strong><br/>Another way to help is to spread the word! Tell your friends, relatives, and colleagues about Children\'s Science Center and encourage them to get involved. Consider organizing an information session for your schools, community and religious associations. The more people who support Children\'s Science Center, the faster we can open our doors to be the resource our families want and need. <a href="' . get_base_path() . 'supporters-tell-a-friend/">Tell A Friend</a>';
+		$props->rightSidebarText = '<strong class="bgreen">Get The Word Out</strong><br/>Another way to help is to spread the word! Tell your friends, relatives, and colleagues about Children\'s Science Center and encourage them to get involved. Consider hosting an <a href="news-virtual-tours">Imagine Their Future</a> virtual tour and information session for your schools, community and religious associations. <a href="mailto:suefajer@childsci.org?subject=Website+Inquiry:+Interested+in+Hosting+an+Imagine+Their+Future+Tour">Contact us to see how</a>.';
 		$props->pageColor = 'bgreen';
-	} else if (stristr($page, 'member') !== FALSE) {
-		$props->iconsActiveArr['memberships'] = 'ms_active';
+	} else if (stristr($page, 'volunteer') !== FALSE) {
+		$props->iconsActiveArr['volunteer'] = 'ms_active';
 		$props->headerCssClass = 'csc-memberships';
-		$props->leftMenuId = '';
-		$props->displaySecondaryMenu = false;
-		$props->rightSidebarId = 'memberships';
+		$props->leftMenuId = 'Volunteer';
+		$props->displaySecondaryMenu = true;
+		$props->rightSidebarId = 'volunteer';
 		$props->rightSidebarText = '<strong class="lblue">Send Us Your Ideas</strong><br/>Children\'s Science Center is going to be YOUR community resource. We\'d like to hear from you about what you would like to see at Children\'s Science Center. Please send your ideas, comments, and suggestions to <a href="mailto:Suggestions@TheChildrensScienceCenter.org">Suggestions@TheChildrensScienceCenter.org</a>';
 		$props->pageColor = 'lblue';
-		$props->displayTakeVirtualTour = true;
+		$props->displayTakeVirtualTour = false;
 	} else if (stristr($page, 'donate') !== FALSE) {
 		$props->iconsActiveArr['donate'] = 'hd_active';
 		$props->headerCssClass = 'csc-donate';

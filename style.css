@@ -553,7 +553,7 @@ a#csc-donate:hover {
 
 
 div.csc-left-menu {
-    padding-left:30px;
+    padding-left:16px;
 }
 
 div.csc-left-menu form {
@@ -1249,6 +1249,10 @@ h3 a {
 }
 
 ul {list-style: none}
+ul.hotlist {
+	list-style: disc;
+	margin-left: 40px;
+}
 form li {
 	width: 375px; 
 	margin: 0 0 10px; 
