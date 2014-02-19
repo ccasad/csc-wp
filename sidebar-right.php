@@ -39,7 +39,7 @@ the Museum</a>
 			<div class="csc-textblock_post"> 
 				<a class="csc-textblock_img csc-index_img3" href="take_our_survey.html"></a>
 				<h3 class="green">
-					<a class="green" href="http://www.microsoftstore.com/giving">See us on TV</a>
+					<a class="green" href="http://wj.la/PxhvQp">See us on TV</a>
 				</h3>
 				<p>
 					Watch ABC 7 News profile of Children’s Science Center
