@@ -1,5 +1,7 @@
 <?php
 $base_path = get_base_path();
+
+
 ?>
 
 				<div id="footer">
@@ -24,7 +26,12 @@ $base_path = get_base_path();
 	
 							<span>Copyright &copy; 2013 Children's Science Center.<br/> All Rights Reserved.<br>
 							<span class="csc-footer_hinge">Web Design: 
-							<a href="http://www.hingemarketing.com" target="_blank">Hinge</a></span></span>
+							<?php if ($wp_query->get_queried_object()->ID == '5') : ?>
+								<a href="http://www.hingemarketing.com" target="_blank">Hinge</a>
+							<?php else : ?>
+								Hinge
+							<?php endif; ?>
+							</span></span>
 						<!-- end #footer-in --> 
 						</div>
 					<!-- end #footer -->

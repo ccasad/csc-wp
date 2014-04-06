@@ -58,7 +58,7 @@ if (!isset($_POST['username']) || !strlen($_POST['username'])) {
 				$subject = "Interest in CSC Newsletter";
 				$body = "The following person was added to the Children's Science Center Newsletter:\n\n" . "First Name: " . $_POST['nlfirstname'] . "\nLast Name: " . $_POST['nllastname'] . "\nEmail: " . $_POST['nlemail'];
 				
-				$status = mail($to, $subject, $body, $headers);
+				$status = true; //mail($to, $subject, $body, $headers);
 				if ($status) {
 					$messageCss = 'alert-success';
 					$messageText = "<strong>You have been added to our newsletter listing.  <br/>Thank you.</strong>";

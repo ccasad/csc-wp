@@ -17,10 +17,10 @@ $props = $GLOBALS['page_properties'];
 		<div class="csc-textblock_right" id="csc-rightblock_index">
 			<div class="csc-textblock_post"> 
 				<a class="csc-textblock_img csc-index_img1" href="<?php print $base_path; ?>current-news"></a>
-				<h3 class="red"><a class="red" href="<?php print $base_path; ?>current-news">2013 in Action</a></h3>
+				<h3 class="red"><a class="red" href="<?php print $base_path; ?>wp-content/uploads/2013/07/2014-15-Childrens-Science-Center_Mobile-Labs-Info-and-Application-Form.pdf">Mobile Labs</a></h3>
 				<p>
-					See how we inspired a love of STEM learning in 2013.
-					<span><a href="http://youtu.be/TCV-Pf4LGt4" target="blank"> WATCH</a></span>
+					Host a Mobile Labs Family Science Night at your school in 2014-15!
+					<span><a href="<?php print $base_path; ?>wp-content/uploads/2013/07/2014-15-Childrens-Science-Center_Mobile-Labs-Info-and-Application-Form.pdf" target="blank"> LEARN MORE</a></span>
 				</p>
 			</div>
 			<div class="clear"></div>
