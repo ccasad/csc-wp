@@ -132,7 +132,9 @@ $props = $GLOBALS['page_properties'];
 				endif; 
 				?>
 				</p>
-				<p>Download our <a href="">Fact Sheet</a></p>
+				
+				<p>Download our <a href="http://childsci.org/wp-content/uploads/2013/07/2014_Childrens-Science-Center-Fact-Sheet_FINAL.pdf">Fact Sheet</a></p>
+				
 			</div>
 		</div>
 		<br/><br/>

@@ -17,7 +17,7 @@ $props = $GLOBALS['page_properties'];
 	<?php wp_head(); ?>
   
   <link rel="stylesheet" href="<?php print $base_path.'wp-content/themes/csc/'; ?>reset.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=1.1">
 
 </head>
 <body id="<?php print $props->headerCssClass; ?>">
@@ -54,10 +54,10 @@ $props = $GLOBALS['page_properties'];
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['supporters']; ?>" href="<?php print $base_path; ?>supporters"></a>
 								<div class="clear"></div>
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['kids']; ?>" href="<?php print $base_path; ?>kids-only"></a> 
-								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['visitors']; ?>" href="<?php print $base_path; ?>visitors"></a> 
-								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['educators']; ?>" href="<?php print $base_path; ?>educators"></a> 
+								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['vision']; ?>" href="<?php print $base_path; ?>our-vision"></a> 
+								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['programs']; ?>" href="<?php print $base_path; ?>programs"></a> 
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['exhibits']; ?>" href="<?php print $base_path; ?>exhibits"></a> 
-								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['about']; ?>" href="<?php print $base_path; ?>our-vision"></a> 
+								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['about']; ?>" href="<?php print $base_path; ?>our-team"></a> 
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['volunteer']; ?>" href="<?php print $base_path; ?>volunteer-how-to"></a> 
 								<a class="csc-nav_item" id="csc-<?php print $props->iconsActiveArr['news']; ?>" href="<?php print $base_path; ?>current-news"></a> 
 							</div>

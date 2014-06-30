@@ -27,6 +27,11 @@ $props = $GLOBALS['page_properties'];
 							<p><span style="color:rgb(51, 51, 51)">Join us for an exciting look at the Children's Science Center at one of our upcoming Virtual Tours in Herndon. &nbsp;<a href="<?php print $base_path; ?>news-virtual-tours">READ MORE</a></span></p>
 					</div>
 				</div>
+				
+				<div>
+					<a href="<?php print $base_path; ?>current-news"><img src="http://childsci.org/wp-content/uploads/2014/05/csc_site_map.jpg" style="position:relative; left:-50px; top:50px; width:310px; height:auto; background-color:#f4f4f4;" /></a>
+				</div>
+				
 			</div>
 		</div>
 	<?php endif; ?>

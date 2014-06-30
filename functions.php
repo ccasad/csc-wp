@@ -33,7 +33,7 @@ $props = new PageProperties();
 $GLOBALS['page_properties'] = $props;
 
 class PageProperties {
-	public $iconsActiveArr = array('kids'=>'ko','visitors'=>'vs','educators'=>'ed','exhibits'=>'ex','about'=>'au','news'=>'cn','supporters'=>'su','volunteer'=>'ms','donate'=>'hd');
+	public $iconsActiveArr = array('kids'=>'ko','vision'=>'vi','educators'=>'ed','exhibits'=>'ex','about'=>'au','news'=>'cn','supporters'=>'su','volunteer'=>'ms','donate'=>'hd','programs'=>'pg','visitors'=>'vs');
 	public $headerCssClass = 'csc-index';
 	public $leftMenuId = '';
 	public $displaySecondaryMenu = true;
@@ -82,6 +82,20 @@ function get_page_properties() {
 		$props->rightSidebarId = 'visitors';
 		$props->rightSidebarText = '<strong class="violet2">Did you know?</strong><br/>"Imagination is more important than knowledge. For while knowledge defines all we currently know and understand, imagination points to all we might yet discover and create."<br/>Albert Einstein';
 		$props->pageColor = 'violet2';
+	} else if (stristr($page, 'vision') !== FALSE) {
+		$props->iconsActiveArr['vision'] = 'vi_active';
+		$props->headerCssClass = 'csc-vision';
+		$props->leftMenuId = 'Vision';
+		$props->rightSidebarId = 'vision';
+		$props->rightSidebarText = '<strong class="violet2">Did you know?</strong><br/>"Imagination is more important than knowledge. For while knowledge defines all we currently know and understand, imagination points to all we might yet discover and create."<br/>Albert Einstein';
+		$props->pageColor = 'violet2';
+	} else if (stristr($page, 'overview-video') !== FALSE) {
+		$props->iconsActiveArr['vision'] = 'vi_active';
+		$props->headerCssClass = 'csc-vision';
+		$props->leftMenuId = 'Vision';
+		$props->rightSidebarId = 'vision';
+		$props->rightSidebarText = '';
+		$props->pageColor = 'violet2';
 	} else if (stristr($page, 'educators') !== FALSE) {
 		$props->iconsActiveArr['educators'] = 'ed_active';
 		$props->headerCssClass = 'csc-educators';
@@ -89,6 +103,13 @@ function get_page_properties() {
 		$props->rightSidebarId = 'educators';
 		$props->rightSidebarText = '<strong class="violet2">Send Us Your Ideas</strong><br/>Teachers will be able to use Children\'s Science Center as an educational resource as well. We’d like to hear your ideas for exhibits that fit your curriculum; please send your comments, suggestions and thoughts to <a href="mailto:Suggestions@TheChildrensScienceCenter.org">Suggestions@TheChildrensScienceCenter.org</a>.';
 		$props->pageColor = 'violet2';
+	} else if (stristr($page, 'programs') !== FALSE) {
+		$props->iconsActiveArr['programs'] = 'pg_active';
+		$props->headerCssClass = 'csc-programs';
+		$props->leftMenuId = 'Programs';
+		$props->rightSidebarId = 'programs';
+		$props->rightSidebarText = 'Watch a short <a href="http://www.youtube.com/watch?v=AvaZoToCVF4" target="_blank">video</a> about our Museum without Walls program which allows us to fulfill our mission before our doors open.';
+		$props->pageColor = 'violet2';	
 	} else if (stristr($page, 'exhibits') !== FALSE) {
 		$props->iconsActiveArr['exhibits'] = 'ex_active';
 		$props->headerCssClass = 'csc-exhibits';
@@ -138,6 +159,7 @@ function get_page_properties() {
 		$props->rightSidebarText = '<strong class="green">Did you know?</strong><br/>Only about one-third of 4th and 8th grade students and less than 20% of 12th graders in the United States reach proficiency on mathematics and science tests.<br/><br/>National Science Foundation, 2007';
 		$props->pageColor = 'green';
 		$props->displayDonateSidebarItem = true;
+	
 	} else {
 		$props->headerCssClass = 'csc-index';
 		$props->pageColor = 'blue';

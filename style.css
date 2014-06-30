@@ -60,7 +60,9 @@ body#csc-donate      { background: transparent url(images/footer-bg-donate.gif) 
 body#csc-supporters  { background: transparent url(images/footer-bg-supporters.gif) repeat-x left bottom;}
 body#csc-kids        { background: transparent url(images/footer-bg-kids.gif) repeat-x left bottom;      }
 body#csc-visitors    { background: transparent url(images/footer-bg-visitors.gif) repeat-x left bottom;  }
+body#csc-vision      { background: transparent url(images/footer-bg-visitors.gif) repeat-x left bottom;  }
 body#csc-educators   { background: transparent url(images/footer-bg-visitors.gif) repeat-x left bottom; }
+body#csc-programs    { background: transparent url(images/footer-bg-visitors.gif) repeat-x left bottom; }
 body#csc-exhibits    { background: transparent url(images/footer-bg-visitors.gif) repeat-x left bottom;  }
 body#csc-about       { background: transparent url(images/footer-bg-blue.gif) repeat-x left bottom;      }
 body#csc-memberships { background: transparent url(images/footer-bg-blue.gif) repeat-x left bottom;      }
@@ -195,7 +197,9 @@ div#csc-donate      { background: transparent url(images/nav-bg-donate.gif) no-r
 div#csc-supporters  { background: transparent url(images/nav-bg-supporters.gif) no-repeat left top;  }
 div#csc-kids        { background: transparent url(images/nav-bg-kids.gif) no-repeat left top;        }
 div#csc-visitors    { background: transparent url(images/nav-bg-visitors.gif) no-repeat left top;    }
+div#csc-vision      { background: transparent url(images/nav-bg-visitors.gif) no-repeat left top;    }
 div#csc-educators   { background: transparent url(images/nav-bg-educators.gif) no-repeat left top;   }
+div#csc-programs    { background: transparent url(images/nav-bg-educators.gif) no-repeat left top;   }
 div#csc-exhibits    { background: transparent url(images/nav-bg-exhibits.gif) no-repeat left top;    }
 div#csc-about       { background: transparent url(images/nav-bg-about.gif) no-repeat left top;       }
 div#csc-memberships { background: transparent url(images/nav-bg-memberships.gif) no-repeat left top; }
@@ -287,9 +291,17 @@ a#csc-vs        { background: transparent url(images/nav4.gif) no-repeat left to
 a#csc-vs:hover  { background: transparent url(images/nav4.gif) no-repeat left bottom; }
 a#csc-vs_active { background: transparent url(images/nav4.gif) no-repeat left bottom; }
 
+a#csc-vi        { background: transparent url(images/nav4.gif) no-repeat left top; margin-left:0px;  }
+a#csc-vi:hover  { background: transparent url(images/nav4.gif) no-repeat left bottom; }
+a#csc-vi_active { background: transparent url(images/nav4.gif) no-repeat left bottom; }
+
 a#csc-ed        { background: transparent url(images/nav5.gif) no-repeat left top; margin-left:0px;   }
 a#csc-ed:hover  { background: transparent url(images/nav5.gif) no-repeat left bottom; }
 a#csc-ed_active { background: transparent url(images/nav5.gif) no-repeat left bottom; }
+
+a#csc-pg        { background: transparent url(images/nav5.gif) no-repeat left top; margin-left:0px;   }
+a#csc-pg:hover  { background: transparent url(images/nav5.gif) no-repeat left bottom; }
+a#csc-pg_active { background: transparent url(images/nav5.gif) no-repeat left bottom; }
 
 a#csc-ex        { background: transparent url(images/nav6.gif) no-repeat left top; margin-left:0px; }
 a#csc-ex:hover  { background: transparent url(images/nav6.gif) no-repeat left bottom; }
@@ -516,6 +528,13 @@ div.csc-textblock_right div.csc-textblock_post .csc-textblock_img {
 }
 .csc-index_img3:hover{
          background: transparent url(images/index-img1.gif) no-repeat right top;
+}
+
+.csc-index_img4{
+         background: transparent url(http://childsci.org/wp-content/uploads/2014/06/icecream.png) no-repeat right top;
+}
+.csc-index_img4:hover{
+         background: transparent url(http://childsci.org/wp-content/uploads/2014/06/icecream.png) no-repeat right top;
 }
 
 div.csc-column	{

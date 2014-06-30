@@ -73,7 +73,23 @@ $props = $GLOBALS['page_properties'];
 				endif; 
 				?>
 				</p>
-				
+				<br/>
+				<p>
+				<a name="eac" class="our-team-sub-heading">STEM Advisory Council</a>
+				</p>
+				<p>
+				<?php 
+				$member = new WP_Query(array('post_type' => 'CSCTeamMember', 'category_name' => 'sac', 'orderby' => 'menu_order', 'order' => 'ASC', 'posts_per_page' => -1));
+
+				if ($member->have_posts()) : 
+					while($member->have_posts()) : 
+						$member->the_post();
+						
+						the_content();
+					endwhile; 
+				endif; 
+				?>
+				</p>
 			</div>
 		</div>
 		<br/><br/>
